@@ -1,12 +1,13 @@
 import torchreid
+# market1501, dukemtmcreid and msmt17
 
-source = 'dukemtmcreid'
+source = 'market1501'
 target = source
 
 batch_size = 32
 
 datamanager = torchreid.data.ImageDataManager(
-        root='reid-data',
+        root='/home/ccc/Link/data',
         sources=source,
         targets=target,
         height=256,
